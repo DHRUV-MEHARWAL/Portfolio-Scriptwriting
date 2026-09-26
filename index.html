@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruv Meharwal — Scriptwriter & Ad Copywriter</title>
+    <meta name="description"
+        content="Portfolio of Dhruv Meharwal. Scriptwriter for YouTube creators and copywriter for modern brands. Engaging video scripts, clean pacing, and clear direct-response copy.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dhruv Meharwal — Scriptwriter & Ad Copywriter">
+    <meta property="og:description"
+        content="Video scripts and ad copy engineered for viewer retention, natural dialogue, and clear messaging.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts: Outfit for display headers, Plus Jakarta Sans for body, JetBrains Mono for timecodes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="ambient-bg"></div>
+
+    <div class="container">
+        <!-- Sticky Navigation Bar -->
+        <nav class="navbar" id="navbar">
+            <a href="#" class="brand-group">
+                <div class="avatar-wrap">
+                    <img src="./assets/pfp.jpg" alt="Dhruv Meharwal"
+                        onerror="this.src='https://api.dicebear.com/7.x/bottts/svg?seed=Dhruv'">
+                </div>
+                <div class="brand-meta">
+                    <h1>Dhruv Meharwal</h1>
+                    <span>Scriptwriter & Copywriter</span>
+                </div>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#work">Work</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeToggle" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+                    <svg id="themeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <a href="#contact" class="btn-primary desktop-cta-btn">
+                    <span>Get in Touch</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" title="Toggle Navigation Menu" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+        <aside class="mobile-menu-drawer" id="mobileMenuDrawer" aria-hidden="true">
+            <div class="mobile-menu-header">
+                <span class="mobile-menu-title">Navigation</span>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close navigation menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <ul class="mobile-nav-list">
+                <li><a href="#work" class="mobile-nav-link"><span>Work Samples</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+                <li><a href="#services" class="mobile-nav-link"><span>Services</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+                <li><a href="#process" class="mobile-nav-link"><span>Process</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+                <li><a href="#about" class="mobile-nav-link"><span>About Dhruv</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+                <li><a href="#contact" class="mobile-nav-link"><span>Contact</span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg></a></li>
+            </ul>
+            <div class="mobile-menu-footer">
+                <a href="#contact" class="btn-primary mobile-cta-full" id="mobileCtaBtn">
+                    <span>Get in Touch</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                <span>Available for freelance scripts & retainers</span>
+            </div>
+
+            <h2>
+                I write video scripts and ad copy that hold attention and drive real results.
+            </h2>
+
+            <p class="hero-bio">
+                Hi, I'm Dhruv. I help YouTube creators and modern brands turn complex ideas into engaging scripts,
+                high-retention video hooks, and clear social ads. No corporate buzzwords or filler—just clean pacing,
+                natural
+                storytelling, and clear calls to action.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#work" class="btn-primary">
+                    <span>Read Writing Samples</span>
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2.5">
+                        <line x1="12" y1="5" x2="12" y2="19"></line>
+                        <polyline points="19 12 12 19 5 12"></polyline>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <span>Contact Me</span>
+                </a>
+            </div>
+
+            <div class="contact-quick">
+                <button class="quick-pill" onclick="copyText('dhruvmeh567@gmail.com', 'Email copied to clipboard!')"
+                    title="Click to copy email">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L1 7"></path>
+                    </svg>
+                    <span>dhruvmeh567@gmail.com</span>
+                    <span class="pill-copy-tag">Copy</span>
+                </button>
+
+                <a href="https://linkedin.com/in/dhruv-meharwal-a1898a30a" target="_blank" rel="noopener noreferrer"
+                    class="quick-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.8v8.37h-2.8v-8.37M7.86 6.72a1.63 1.63 0 1 0 0 3.26 1.63 1.63 0 0 0 0-3.26Z" />
+                    </svg>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </header>
+
+        <!-- Realistic, Honest Metrics Ribbon -->
+        <div class="metrics-ribbon">
+            <div class="metric-item">
+                <div class="metric-value">50+</div>
+                <div class="metric-label">Completed Video Scripts & Concepts</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-value">48h</div>
+                <div class="metric-label">Average First Draft Turnaround</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-value">2 Rounds</div>
+                <div class="metric-label">Free Revisions Included on Every Project</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-value">100%</div>
+                <div class="metric-label">Dedicated On-Time Delivery Track Record</div>
+            </div>
+        </div>
+
+        <!-- WORK & WRITING SAMPLES -->
+        <section id="work" class="section">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h3 class="section-title">Selected Writing Samples</h3>
+                <p class="section-desc">
+                    Real script excerpts written in professional Audio/Visual (AV) format with on-screen visual
+                    directions and timed voiceover lines.
+                </p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="filter-bar">
+                <button class="filter-chip active" onclick="filterWork('all', this)">All Samples (3)</button>
+                <button class="filter-chip" onclick="filterWork('youtube', this)">YouTube Video Essay</button>
+                <button class="filter-chip" onclick="filterWork('shortform', this)">Short-Form Video (UGC)</button>
+                <button class="filter-chip" onclick="filterWork('ad', this)">Social Ad Copy</button>
+            </div>
+
+            <div class="samples-stack">
+                <!-- SAMPLE 1: Long-Form YouTube Script -->
+                <article class="sample-card" data-category="youtube">
+                    <div class="sample-top">
+                        <div class="sample-meta-group">
+                            <span class="sample-badge">Long-Form YouTube Script</span>
+                            <h3>How Shopping Apps Quietly Keep You Addicted</h3>
+                            <p class="sample-summary">
+                                <strong>Format:</strong> 10-Minute Video Essay &middot; <strong>Audience:</strong> Tech
+                                & Culture viewers &middot; <strong>Goal:</strong> High viewer retention past the
+                                30-second mark.
+                            </p>
+                        </div>
+                        <div class="sample-preview-wrap preview-yt" title="Video Thumbnail Concept">
+                            <img src="./assets/youtube_retail_trap.jpg"
+                                alt="How Shopping Apps Quietly Keep You Addicted Video Thumbnail"
+                                class="sample-preview-img" loading="lazy">
+                            <span class="preview-badge-overlay">10:14 &middot; 1080p</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Compact Teaser & Interaction Button (Desktop: hidden) -->
+                    <div class="mobile-sample-teaser">
+                        <div class="teaser-quote">
+                            <span class="teaser-badge">Hook Excerpt</span>
+                            <p class="teaser-text">"In 2012, a casino researcher proved that if a slot machine gives you a reward every single time you pull the handle, you get bored in ten minutes..."</p>
+                        </div>
+                        <button class="btn-mobile-details" onclick="openSampleModal('sample1')" aria-label="View Full Script & Details">
+                            <span>View Full Script & Breakdown</span>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Full Script & Breakdown (Visible inline on PC; pops up in modal on Mobile) -->
+                    <div class="sample-detail-body" id="sample1-details">
+                        <!-- AV Script Table -->
+                        <div class="av-script-table">
+                            <div class="av-header-row">
+                                <div>Timecode</div>
+                                <div>Visual Cues (On Screen)</div>
+                                <div>Voiceover / Dialogue</div>
+                            </div>
+
+                            <div class="av-row">
+                                <div class="av-time">0:00 - 0:08 [Hook]</div>
+                                <div class="av-visual">
+                                    Fast-paced montage of flashing mobile checkout screens, coupon wheel spins, and discount
+                                    notifications. Sudden cut to quiet black screen.
+                                </div>
+                                <div class="av-audio">
+                                    <strong>Narrator:</strong> "In 2012, a casino researcher proved that if a slot machine
+                                    gives you a reward every single time you pull the handle, you get bored in ten minutes.
+                                    But if it only rewards you <em>sometimes</em>—completely at random—your brain releases
+                                    three times more dopamine."
+                                </div>
+                            </div>
+
+                            <div class="av-row">
+                                <div class="av-time">0:08 - 0:16 [Twist]</div>
+                                <div class="av-visual">
+                                    Crisp screen capture of a popular shopping app spinning a daily prize wheel for discount
+                                    codes.
+                                </div>
+                                <div class="av-audio">
+                                    <strong>Narrator:</strong> "That experiment wasn't designed for Las Vegas. That’s the
+                                    exact psychological mechanism running inside the shopping app currently sitting on your
+                                    phone."
+                                </div>
+                            </div>
+
+                            <div class="av-row">
+                                <div class="av-time">0:16 - 0:25 [Roadmap]</div>
+                                <div class="av-visual">
+                                    Minimal graphic title card: 'The 4 Traps of Modern E-Commerce'. Slow zoom in.
+                                </div>
+                                <div class="av-audio">
+                                    <strong>Narrator:</strong> "Today, we're breaking down the four subtle design traps
+                                    brands use to get you to spend money before you even realize you've opened the app."
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="takeaway-box">
+                            <div class="takeaway-title">Why This Works</div>
+                            <div class="takeaway-text">
+                                Rather than starting with a cliché greeting ("Welcome back to the channel"), it immediately
+                                opens with an intriguing psychology experiment, bridges it directly to the viewer's everyday
+                                life, and clearly states what the viewer will learn in the next 10 minutes.
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- SAMPLE 2: Short-Form UGC Video Script -->
+                <article class="sample-card" data-category="shortform">
+                    <div class="sample-top">
+                        <div class="sample-meta-group">
+                            <span class="sample-badge">Short-Form Video (TikTok / Reels)</span>
+                            <h3>Skincare Myth Buster: The "Cold Spoon" Routine</h3>
+                            <p class="sample-summary">
+                                <strong>Format:</strong> 30-Second UGC Video &middot; <strong>Product:</strong> Caffeine
+                                & Peptide Eye Serum &middot; <strong>Angle:</strong> Debunking a common home remedy.
+                            </p>
+                        </div>
+                        <div class="sample-preview-wrap preview-ugc" title="9:16 Video Creative Preview">
+                            <img src="./assets/aura_skin_serum.jpg" alt="Aura Skin Eye Serum 9:16 Short-Form Creative"
+                                class="sample-preview-img" loading="lazy">
+                            <span class="preview-badge-overlay">0:30 &middot; 9:16</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Compact Teaser & Interaction Button (Desktop: hidden) -->
+                    <div class="mobile-sample-teaser">
+                        <div class="teaser-quote">
+                            <span class="teaser-badge">Pattern Interrupt</span>
+                            <p class="teaser-text">"Please stop freezing spoons and piling on three layers of concealer every morning. It’s not fixing your puffy under-eyes—it’s just chilling your skin..."</p>
+                        </div>
+                        <button class="btn-mobile-details" onclick="openSampleModal('sample2')" aria-label="View Full Script & Details">
+                            <span>View Full Script & Breakdown</span>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Full Script & Breakdown (Visible inline on PC; pops up in modal on Mobile) -->
+                    <div class="sample-detail-body" id="sample2-details">
+                        <!-- AV Script Table -->
+                        <div class="av-script-table">
+                            <div class="av-header-row">
+                                <div>Timecode</div>
+                                <div>Visual Cues (On Screen)</div>
+                                <div>Voiceover / Dialogue</div>
+                            </div>
+
+                            <div class="av-row">
+                                <div class="av-time">0:00 - 0:04 [Pattern Interrupt]</div>
+                                <div class="av-visual">
+                                    Creator sits in morning bathroom lighting, holding a frozen metal tablespoon over one
+                                    eye looking visibly tired. Quick cut to camera.
+                                </div>
+                                <div class="av-audio">
+                                    <strong>Creator:</strong> "Please stop freezing spoons and piling on three layers of
+                                    concealer every morning. It’s not fixing your puffy under-eyes—it’s just chilling your
+                                    skin for five minutes."
+                                </div>
+                            </div>
+
+                            <div class="av-row">
+                                <div class="av-time">0:04 - 0:14 [The Solution]</div>
+                                <div class="av-visual">
+                                    Cut to creator picking up a sleek dropper bottle, applying two drops under the eye with
+                                    gentle fingertip tapping.
+                                </div>
+                                <div class="av-audio">
+                                    <strong>Creator:</strong> "Here's what actually made a noticeable difference for me in
+                                    seven days: using concentrated caffeine peptides that actually absorb instead of just
+                                    sitting on top."
+                                </div>
+                            </div>
+
+                            <div class="av-row">
+                                <div class="av-time">0:14 - 0:30 [Call to Action]</div>
+                                <div class="av-visual">
+                                    Close-up side-by-side comparison photos on screen. Creator smiles naturally and points
+                                    to the link button below.
+                                </div>
+                                <div class="av-audio">
+                                    <strong>Creator:</strong> "It takes about ten seconds every morning and it's backed by a
+                                    30-day trial. Grab a bottle from the link below before their spring batch sells out."
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="takeaway-box">
+                            <div class="takeaway-title">Why This Works</div>
+                            <div class="takeaway-text">
+                                Starts by calling out a widely recognizable DIY habit (frozen spoons) which makes the viewer
+                                feel understood. It presents the product not as a miracle cure, but as a practical,
+                                time-saving alternative with zero risk.
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- SAMPLE 3: Paid Social Ad Copy -->
+                <article class="sample-card" data-category="ad">
+                    <div class="sample-top">
+                        <div class="sample-meta-group">
+                            <span class="sample-badge">Paid Social Ad (Instagram & Facebook Feed)</span>
+                            <h3>Clean Energy Drink vs. The 2 PM Slump</h3>
+                            <p class="sample-summary">
+                                <strong>Format:</strong> Social Feed Copy &middot; <strong>Product:</strong> Nootropic
+                                Focus Drink &middot; <strong>Target:</strong> Knowledge workers & founders.
+                            </p>
+                        </div>
+                        <div class="sample-preview-wrap preview-ad" title="Social Feed Ad Creative Preview">
+                            <img src="./assets/quickfocus_can.jpg" alt="QuickFocus Clean Energy Ad Creative"
+                                class="sample-preview-img" loading="lazy">
+                            <span class="preview-badge-overlay">Meta Feed Ad</span>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Compact Teaser & Interaction Button (Desktop: hidden) -->
+                    <div class="mobile-sample-teaser">
+                        <div class="teaser-quote">
+                            <span class="teaser-badge">Direct Hook</span>
+                            <p class="teaser-text">"Most energy drinks don't give you focus. They give you 200mg of harsh caffeine, a 45-minute spike of restless jitters, and a heavy 2:00 PM crash..."</p>
+                        </div>
+                        <button class="btn-mobile-details" onclick="openSampleModal('sample3')" aria-label="View Full Script & Details">
+                            <span>View Full Script & Breakdown</span>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Full Script & Breakdown (Visible inline on PC; pops up in modal on Mobile) -->
+                    <div class="sample-detail-body" id="sample3-details">
+                        <div class="av-script-table">
+                            <div class="av-header-row">
+                                <div>Section</div>
+                                <div>Creative / Format</div>
+                                <div>Ad Copy & Body</div>
+                            </div>
+
+                            <div class="av-row">
+                                <div class="av-time">Primary Text</div>
+                                <div class="av-visual">Clean photo of product can on a minimalist desk next to a mechanical
+                                    keyboard and notebook.</div>
+                                <div class="av-audio">
+                                    Most energy drinks don't give you focus.<br><br>
+                                    They give you 200mg of harsh caffeine, a 45-minute spike of restless jitters, and a
+                                    heavy 2:00 PM crash right when you need to get real work done.<br><br>
+                                    <strong>QuickFocus was designed differently:</strong><br>
+                                    &bull; <strong>L-Theanine + Green Tea Caffeine:</strong> Clean, calm focus without the
+                                    jitters.<br>
+                                    &bull; <strong>Lion's Mane Mushroom Extract:</strong> Helps clear brain fog during deep
+                                    work.<br>
+                                    &bull; <strong>Zero Added Sugar:</strong> No afternoon crash.<br><br>
+                                    One can replaces your second and third cup of coffee—at half the price of a café latte.
+                                </div>
+                            </div>
+
+                            <div class="av-row">
+                                <div class="av-time">Headline & CTA</div>
+                                <div class="av-visual">Feed Card Footer Banner</div>
+                                <div class="av-audio">
+                                    <strong>Headline:</strong> Stop crashing at 2 PM. Work smarter with clean energy.<br>
+                                    <strong>Button:</strong> Shop Now (Try Risk-Free for 30 Days)
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="takeaway-box">
+                            <div class="takeaway-title">Why This Works</div>
+                            <div class="takeaway-text">
+                                Instead of reciting ingredients, it attacks the real problem everyone relates to: the 2 PM
+                                energy slump and caffeine jitters. It anchors the price against a $6 café latte, making the
+                                purchase feel like a money-saving decision.
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="section">
+            <div class="section-header">
+                <span class="section-tag">Services</span>
+                <h3 class="section-title">What I Write</h3>
+                <p class="section-desc">
+                    Specialized video scripting and direct-response ad writing tailored for creators, e-commerce brands,
+                    and marketing agencies.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                        </svg>
+                    </div>
+                    <h4>YouTube Video Scripts</h4>
+                    <p>
+                        Full 8 to 15-minute scripts for video essays, product breakdowns, and educational channels
+                        designed for high watch-time.
+                    </p>
+                    <ul class="service-features">
+                        <li>3 Hook variations for testing</li>
+                        <li>Complete on-screen B-roll visual cues</li>
+                        <li>Natural, conversational spoken dialogue</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h4>Short-Form Video (UGC)</h4>
+                    <p>
+                        15 to 45-second scripts for TikTok, Instagram Reels, and YouTube Shorts that stop scrolling in
+                        the first 3 seconds.
+                    </p>
+                    <ul class="service-features">
+                        <li>Relatable, non-salesy creator angles</li>
+                        <li>Action directions for on-camera talent</li>
+                        <li>Clear, natural calls to action</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </div>
+                    <h4>Paid Social Ad Copy</h4>
+                    <p>
+                        High-converting ad copy for Meta (Instagram & Facebook), Twitter/X, and landing pages that
+                        clearly communicate your product's value.
+                    </p>
+                    <ul class="service-features">
+                        <li>Primary text, headlines & link descriptions</li>
+                        <li>Multiple angle testing (Pain vs. Benefit)</li>
+                        <li>Clear risk-reversal offer structuring</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS SECTION -->
+        <section id="process" class="section">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h3 class="section-title">A Simple, Stress-Free Process</h3>
+                <p class="section-desc">
+                    Working together is straightforward. From initial brief to final draft, here is what you can expect:
+                </p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-card">
+                    <span class="step-num">Step 01</span>
+                    <h4>Brief & Research</h4>
+                    <p>
+                        You share your video topic, product link, or project goals. I review your audience, past
+                        content, and competitors to identify the strongest angle.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <span class="step-num">Step 02</span>
+                    <h4>Draft Delivery in 48h</h4>
+                    <p>
+                        You receive the full script formatted in Google Docs or Notion, complete with on-screen visual
+                        cues, timecodes, and alternative hook options.
+                    </p>
+                </div>
+
+                <div class="process-card">
+                    <span class="step-num">Step 03</span>
+                    <h4>Revisions & Polish</h4>
+                    <p>
+                        We review the script together. Every project includes two rounds of free revisions so we can
+                        tweak pacing and phrasing until it feels 100% right.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="about-card">
+                <div class="about-text">
+                    <span class="section-tag">About Me</span>
+                    <h3>Writing scripts that sound like a real person, not an ad agency.</h3>
+                    <p>
+                        I'm Dhruv Meharwal, a scriptwriter and copywriter. I focus on video because video is where
+                        modern audiences spend their attention—and where most brands lose it by sounding robotic,
+                        generic, or boring.
+                    </p>
+                    <p>
+                        I believe great video writing comes down to three things: respecting the viewer's time, setting
+                        up an honest reason to care within the first five seconds, and writing lines that roll off the
+                        tongue naturally when read out loud.
+                    </p>
+                </div>
+
+                <div class="about-sidebar">
+                    <h5>Tools & Deliverables</h5>
+                    <div class="about-pill-list">
+                        <span class="about-pill">Google Docs</span>
+                        <span class="about-pill">Notion</span>
+                        <span class="about-pill">AV Dual-Column Format</span>
+                        <span class="about-pill">B-Roll Visual Directions</span>
+                        <span class="about-pill">Fast Turnarounds</span>
+                        <span class="about-pill">2 Revision Rounds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section">
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <span class="section-tag">Let's Connect</span>
+                    <h3>Ready to write something people will actually watch?</h3>
+                    <p>
+                        Whether you have an upcoming YouTube video, a monthly content calendar, or a paid ad campaign,
+                        send me an email with your project ideas and let's discuss details.
+                    </p>
+
+                    <div class="contact-channel">
+                        <span class="channel-label">Direct Email</span>
+                        <div class="email-box">
+                            <span class="email-text">dhruvmeh567@gmail.com</span>
+                            <button class="btn-primary" style="padding: 7px 14px; font-size: 0.8rem;"
+                                onclick="copyText('dhruvmeh567@gmail.com', 'Email copied to clipboard!')">
+                                Copy Email
+                            </button>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 24px;">
+                        <span class="channel-label">Social & Professional</span>
+                        <a href="https://linkedin.com/in/dhruv-meharwal-a1898a30a" target="_blank"
+                            rel="noopener noreferrer" class="btn-secondary"
+                            style="font-size: 0.85rem; padding: 8px 16px;">
+                            <span>LinkedIn Profile</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Simple, Working Project Inquiry Helper -->
+                <div class="contact-card">
+                    <span class="section-tag">Quick Inquiry</span>
+                    <h4 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 8px;">Send a Project
+                        Inquiry</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 20px;">
+                        Fill in a few details and this will prepare a ready-to-send email directly to Dhruv.
+                    </p>
+
+                    <form class="inquiry-form" onsubmit="handleInquirySubmit(event)">
+                        <div class="form-group">
+                            <label class="form-label" for="inqName">Your Name / Channel / Brand</label>
+                            <input class="form-input" type="text" id="inqName" placeholder="e.g. Alex (Apex Media)"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="inqType">What are you looking to create?</label>
+                            <select class="form-select" id="inqType">
+                                <option value="YouTube Video Script">YouTube Video Essay / Explainer Script</option>
+                                <option value="Short-Form Video (UGC / Reels)">Short-Form Video (TikTok / Reels /
+                                    Shorts)</option>
+                                <option value="Paid Social Ad Copy">Paid Social Ad Copy (Meta / Instagram)</option>
+                                <option value="Monthly Scriptwriting Retainer">Ongoing Monthly Retainer</option>
+                                <option value="Other Project">Other / Custom Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="inqMessage">Brief project notes or link</label>
+                            <textarea class="form-textarea" id="inqMessage"
+                                placeholder="Tell me about your channel topic, target turnaround, or link to your brand..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary" style="justify-content: center; width: 100%;">
+                            <span>Open in Email & Send</span>
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Minimal Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 Dhruv Meharwal. All scripts written with clear pacing and genuine human dialogue.</p>
+            </div>
+        </footer>
+    <!-- Mobile Script Details Modal Bottom-Sheet (Hidden on Desktop) -->
+    <div class="mobile-detail-modal-overlay" id="mobileDetailOverlay" onclick="closeSampleModal()"></div>
+    <div class="mobile-detail-modal" id="mobileDetailModal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-drag-handle"></div>
+        <div class="modal-header">
+            <div class="modal-header-meta">
+                <span class="modal-badge" id="modalBadge">Sample Category</span>
+                <h3 class="modal-title" id="modalTitle">Sample Title</h3>
+            </div>
+            <button class="modal-close-btn" onclick="closeSampleModal()" aria-label="Close details">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <div class="modal-body" id="modalBody">
+            <!-- Dynamically populated from clicked sample -->
+        </div>
+        <div class="modal-footer">
+            <button class="btn-secondary modal-btn-close" onclick="closeSampleModal()">Close</button>
+            <a href="#contact" class="btn-primary modal-btn-contact" onclick="closeSampleModal()">Work With Dhruv</a>
+        </div>
+    </div>
+
+    <!-- Toast Notification Popup -->
+    <div id="toastNotification" class="toast">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <span id="toastMsg">Action completed</span>
+    </div>
+
+    <!-- Minimal, Glitch-Free Script -->
+    <script src="./script.js" defer></script>
+</body>
+
+</html>
