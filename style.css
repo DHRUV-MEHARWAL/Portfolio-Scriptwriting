@@ -105,10 +105,7 @@ body {
    NAVIGATION BAR
    ========================================================================== */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px 0;
+    width: 100%;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -120,6 +117,16 @@ body {
 
 [data-theme="light"] .navbar {
     background: rgba(248, 250, 252, 0.94);
+}
+
+.navbar-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 18px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .brand-group {
@@ -1557,7 +1564,11 @@ footer {
 
     /* Navbar on small screens: compact spacing so brand never collides with buttons */
     .navbar {
-        padding: 12px 0;
+        padding: 0;
+    }
+
+    .navbar-container {
+        padding: 12px 16px;
     }
 
     .brand-group {
